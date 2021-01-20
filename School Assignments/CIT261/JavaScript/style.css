@@ -1,0 +1,15 @@
+body {
+   background-color: #9c9659;
+}
+
+header {
+   background-color: #746e35;
+   text-align: center;
+}
+
+div {
+   background-color: #746e35;
+   color: #ffffff;
+   width: 50%;
+   margin: auto;
+}

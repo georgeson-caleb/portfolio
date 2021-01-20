@@ -1,0 +1,42 @@
+body {
+   background-color: black;
+   font-family: Consolas;
+   color: white;
+}
+
+header {
+   text-align: center;
+}
+
+#game {
+   overflow: auto;
+   width: 60%;
+   height: 200px;
+   margin: auto;
+}
+
+#userInput {
+   margin: auto;
+   width: 30%;
+}
+
+button {
+   width: 100px;
+   margin: 10px;
+}
+
+#stats {
+   display: flex;
+   flex-direction: row;
+   margin: auto;
+}
+
+#playerStats, #dragonStats {
+   color: gray;
+   border: 2px solid white;
+   border-collapse: collapse;
+   text-align: center;
+   margin: auto;
+   width: 45%;
+   height: 100px;
+}

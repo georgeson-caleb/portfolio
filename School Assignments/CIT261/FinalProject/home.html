@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <title>
+         Mr. Forte's Piano School
+      </title>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+   </head>
+   <body onload="startLoadingTransition()">
+      <header id="header">
+         <h1>
+            Mr. Forte's Piano School
+         </h1>
+      </header>
+      <div id="loadingScreen" ontransitionend="showPage()">Your talents begin here.</div>
+      <div id="info"></div>
+      <div id="piano" class="flexBox">
+         <div id="c2key" class="piano-key" onmouseover="play('c2')" ontouch="play('c2')"></div>
+         <div id="d2key" class="piano-key" onmouseover="play('d2')" ontouch="play('d2')">
+            <div id="c#2key" class="black-key" onmouseover="play('c2')"></div>
+         </div>
+         <div id="e2key" class="piano-key" onmouseover="play('e2')" ontouch="play('e2')">
+            <div id="d#2key" class="black-key" onmouseover="play('c2')"></div>
+         </div>
+         <div id="f2key" class="piano-key" onmouseover="play('f2')" ontouch="play('f2')"></div>
+         <div id="g2key" class="piano-key" onmouseover="play('g2')" ontouch="play('g2')">
+            <div id="f#2key" class="black-key" onmouseover="play('c2')"></div>
+         </div>
+         <div id="a2key" class="piano-key" onmouseover="play('a2')" ontouch="play('a2')">
+            <div id="g#2key" class="black-key" onmouseover="play('c2')"></div>
+         </div>
+         <div id="b2key" class="piano-key" onmouseover="play('b2')" ontouch="play('b2')">
+            <div id="a#2key" class="black-key" onmouseover="play('c2')"></div>
+         </div>
+         <div id="c3key" class="piano-key" onmouseover="play('c3')" ontouch="play('c3')"></div>
+         <div id="d3key" class="piano-key" onmouseover="play('d3')" ontouch="play('d3')">
+            <div id="c#3key" class="black-key" onmouseover="play('c2')"></div>
+         </div>
+         <div id="e3key" class="piano-key" onmouseover="play('e3')" ontouch="play('e3')">
+            <div id="d#3key" class="black-key" onmouseover="play('c2')"></div>
+         </div>
+         <div id="f3key" class="piano-key" onmouseover="play('f3')" ontouch="play('f3')"></div>
+         <div id="g3key" class="piano-key" onmouseover="play('g3')" ontouch="play('g3')">
+            <div id="f#3key" class="black-key" onmouseover="play('c2')"></div>
+         </div>
+         <div id="a3key" class="piano-key" onmouseover="play('a3')" ontouch="play('a3')">
+            <div id="g#3key" class="black-key" onmouseover="play('c2')"></div>
+         </div>
+         <div id="b3key" class="piano-key" onmouseover="play('b3')" ontouch="play('b3')">
+            <div id="a#2key" class="black-key" onmouseover="play('c2')"></div>
+         </div>
+         <div id="c4key" class="piano-key" onmouseover="play('c4')" ontouch="play('c4')"></div>
+         <div id="d4key" class="piano-key" onmouseover="play('d4')" ontouch="play('d4')">
+            <div id="c#4key" class="black-key" onmouseover="play('c2')"></div>
+         </div>
+         <div id="e4key" class="piano-key" onmouseover="play('e4')" ontouch="play('e4')">
+            <div id="d#4key" class="black-key" onmouseover="play('c2')"></div>
+         </div>
+         <div id="f4key" class="piano-key" onmouseover="play('f4')" ontouch="play('f4')"></div>
+         <div id="g4key" class="piano-key" onmouseover="play('g4')" ontouch="play('g4')">
+            <div id="f#4key" class="black-key" onmouseover="play('c2')"></div>
+         </div>
+         <div id="a4key" class="piano-key" onmouseover="play('a4')" ontouch="play('a4')">
+            <div id="g#4key" class="black-key" onmouseover="play('c2')"></div>
+         </div>
+         <div id="b4key" class="piano-key" onmouseover="play('b4')" ontouch="play('b4')">
+            <div id="a#4key" class="black-key" onmouseover="play('c2')"></div>
+         </div>
+         <div id="c5key" class="piano-key" onmouseover="play('c5')" ontouch="play('c5')"></div>
+         <div id="d5key" class="piano-key" onmouseover="play('d5')" ontouch="play('d5')">
+            <div id="c#5key" class="black-key" onmouseover="play('c2')"></div>
+         </div>
+         <div id="e5key" class="piano-key" onmouseover="play('e5')" ontouch="play('e5')">
+            <div id="d#5key" class="black-key" onmouseover="play('c2')"></div>
+         </div>
+         <div id="f5key" class="piano-key" onmouseover="play('f5')" ontouch="play('f5')"></div>
+         <div id="g5key" class="piano-key" onmouseover="play('g5')" ontouch="play('g5')">
+            <div id="f#5key" class="black-key" onmouseover="play('c2')"></div>
+         </div>
+         <div id="a5key" class="piano-key" onmouseover="play('a5')" ontouch="play('a5')">
+            <div id="g#5key" class="black-key" onmouseover="play('c2')"></div>
+         </div>
+         <div id="b5key" class="piano-key" onmouseover="play('b5')" ontouch="play('b5')">
+            <div id="a#5key" class="black-key" onmouseover="play('c2')"></div>
+         </div>
+         <div id="c6key" class="piano-key" onmouseover="play('c6')" ontouch="play('c6')"></div>
+      </div>
+      <div id="registration">
+         <h3>
+            Now accepting applicants!
+         </h3>
+         <div class="flexBox">
+            <div id="slide1" onanimationend="disable(this)">
+               <input type="text" class="expandable" id="firstName" placeholder="First Name"><br>
+               <input type="text" class="expandable" id="lastName" placeholder="Last Name"><br>
+               <select id="ageGroup">
+                  <option value=0>[Select Age Group]</option>
+                  <option value=1>5-12</option>
+                  <option value=2>13-17</option>
+                  <option value=3>18-29</option>
+                  <option value=4>30+</option>
+               </select><br>
+               <p>
+                  Describe why you want to learn the piano. We want to help you as best we can!
+                  <textarea id="description"></textarea>
+               </p>
+               <button type="button" onclick="slide1Left()">Click here to pick your teaching sessions</button>
+            </div>
+            <div id="slide2" style="display:none" onanimationend="this.classList = ''">
+               <div class="flexBox">
+                  <div id="days" class="flexdown">
+                     <h4>Pick your day(s):</h4>
+                     <div class="selection" id="monday" onmouseover="wiggleDiv(this); play('c4')" onanimationend="undoWiggle(this)" onclick="selectDay(this)">Monday</div>
+                     <div class="selection" id="tuesday" onmouseover="wiggleDiv(this); play('e4')" onanimationend="undoWiggle(this)" onclick="selectDay(this)">Tuesday</div>
+                     <div class="selection" id="wednesday" onmouseover="wiggleDiv(this); play('g4')" onanimationend="undoWiggle(this)" onclick="selectDay(this)">Wednesday</div>
+                     <div class="selection" id="thursday" onmouseover="wiggleDiv(this); play('c5')" onanimationend="undoWiggle(this)" onclick="selectDay(this)">Thursday</div>
+                     <div class="selection" id="friday" onmouseover="wiggleDiv(this); play('e5')" onanimationend="undoWiggle(this)" onclick="selectDay(this)">Friday</div>
+                  </div>
+                  <div id="time">
+                     <h4>Pick your time:</h4>
+                     <div id="timeSelection" class="flexdown scrollable">
+                        <div class="selection" onmouseover="wiggleDiv(this); play('c4')" onanimationend="undoWiggle(this)" onclick="selectTime(this)">8 am</div>
+                        <div class="selection" onmouseover="wiggleDiv(this); play('e4')" onanimationend="undoWiggle(this)" onclick="selectTime(this)">9 am</div>
+                        <div class="selection" onmouseover="wiggleDiv(this); play('g4')" onanimationend="undoWiggle(this)" onclick="selectTime(this)">10 am</div>
+                        <div class="selection" onmouseover="wiggleDiv(this); play('c5')" onanimationend="undoWiggle(this)" onclick="selectTime(this)">11 am</div>   
+                        <div class="selection" onmouseover="wiggleDiv(this); play('e5')" onanimationend="undoWiggle(this)" onclick="selectTime(this)">12 pm</div>
+                        <div class="selection" onmouseover="wiggleDiv(this); play('g5')" onanimationend="undoWiggle(this)" onclick="selectTime(this)">1 pm</div>
+                        <div class="selection" onmouseover="wiggleDiv(this); play('c6')" onanimationend="undoWiggle(this)" onclick="selectTime(this)">2 pm</div>   
+                        <div class="selection" onmouseover="wiggleDiv(this); play('c5')" onanimationend="undoWiggle(this)" onclick="selectTime(this)">3 pm</div>   
+                     </div>
+                  </div>
+               </div>
+               <button type="button" onclick="register()">Register!</button>
+            </div>   
+            <div id="slide3" style="display: none">
+               Thank you, <span id="firstNameResponse"></span>, for registering! Your times are:
+               <span id="dayResponse"></span> at <span id="timeResponse"></span>.
+            </div>
+         </div>
+      </div>
+      <audio style="display:none" id="c2">
+         <source src="pianoNotes/c2.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="d2">
+         <source src="pianoNotes/d2.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="e2">
+         <source src="pianoNotes/e2.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="f2">
+         <source src="pianoNotes/f2.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="g2">
+         <source src="pianoNotes/g2.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="a2">
+         <source src="pianoNotes/a2.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="b2">
+         <source src="pianoNotes/b2.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="c3">
+         <source src="pianoNotes/c3.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="d3">
+         <source src="pianoNotes/d3.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="e3">
+         <source src="pianoNotes/e3.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="f3">
+         <source src="pianoNotes/f3.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="g3">
+         <source src="pianoNotes/g3.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="a3">
+         <source src="pianoNotes/a3.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="b3">
+         <source src="pianoNotes/b3.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="c4">
+         <source src="pianoNotes/c4.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="d4">
+         <source src="pianoNotes/d4.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="e4">
+         <source src="pianoNotes/e4.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="f4">
+         <source src="pianoNotes/f4.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="g4">
+         <source src="pianoNotes/g4.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="a4">
+         <source src="pianoNotes/a4.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="b4">
+         <source src="pianoNotes/b4.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="c5">
+         <source src="pianoNotes/c5.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="d5">
+         <source src="pianoNotes/d5.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="e5">
+         <source src="pianoNotes/e5.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="f5">
+         <source src="pianoNotes/f5.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="g5">
+         <source src="pianoNotes/g5.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="a5">
+         <source src="pianoNotes/a5.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="b5">
+         <source src="pianoNotes/b5.mp3" type="audio/mpeg">
+      </audio>
+      <audio style="display:none" id="c6">
+         <source src="pianoNotes/c6.mp3" type="audio/mpeg">
+      </audio>
+   </body>
+</html>

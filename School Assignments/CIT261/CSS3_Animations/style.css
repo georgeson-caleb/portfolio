@@ -1,0 +1,45 @@
+body {
+   background-color: #349dda;
+}
+
+div {
+   width: 150px;
+   height: 150px;
+   border: 1px solid black;
+   background-color: #2fe782;
+   margin: 5px;
+}
+
+.animation1 {
+   animation-name: rotate;
+   animation-duration: 5s;
+}
+
+.animation2 {
+   animation-name: animation2;
+   animation-duration: 5s;
+}
+
+.animation3 {
+   animation-name: animation3;
+   animation-duration: 5s;
+}
+
+@keyframes rotate {
+   from { transform: rotate(0deg); }
+   to { transform: rotate(360deg); }
+}
+
+@keyframes animation2 {
+   0%  { margin-left: 0;   }
+   50% { margin-left: 80%; }
+   0%  { margin-left: 0;   }
+}
+
+@keyframes animation3 {
+   0%   { width: 150px; height: 150px; }
+   25%  { width: 200px; height: 200px; }
+   50%  { width: 150px; height: 150px; }
+   75%  { width: 100px; height: 100px;  }
+   100% { width: 150px; height: 150px; }
+}

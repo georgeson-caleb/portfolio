@@ -1,0 +1,196 @@
+/****************************
+* Tags
+*****************************/
+body {
+   background-color: #ffefef;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+   background-color: #ffefef;
+   z-index: 1;
+   position: sticky;
+   top: 0;
+   text-align: center;
+   display: none;
+}
+
+header h1 {
+   text-align: center;
+}
+
+select {
+   transition-duration: 2s;
+}
+
+input {
+   width: 25%;
+   padding: 5px;
+   border: 1px solid black;
+   border-radius: 3px;
+   margin: 5px;
+   transition-duration: 1s;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+textarea, select {
+   width: 100%;
+   padding: 5px;
+   border: 1px solid black;
+   border-radius: 3px;
+   margin: 5px;
+   transition-duration: 1s;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+   width: 60%;
+   margin: auto;
+   padding: 5px;
+   border: 1px solid black;
+   border-radius: 3px;
+   transition-duration: 1s;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   display: block;
+}
+
+
+/*******************************
+* IDs
+********************************/
+#loadingScreen {
+   text-align: center;
+   transition: 2s;
+   opacity: 0%;
+   font-size: xx-large;
+   position: absolute;
+   transform: translate(50%, 400px);
+}
+
+#piano {
+   width: 90%;
+   border: 1px solid black;
+   margin: 20px auto;
+   display: none;
+}
+
+#registration {
+   margin: 20px auto;
+   width: 50%;
+   height: 400px;
+   background-color: white;
+   border: 1px solid black;
+   display: none;
+}
+
+#registration h3 {
+   text-align: center;
+}
+
+#days, #time {
+   width: 50%;
+}
+
+#days, #time h4 {
+   text-align: center;
+}
+
+#timeSelection {
+   height: 210px;
+   text-align: center;
+}
+
+#slide1 {
+   width: 50%;
+   margin: auto;
+}
+
+#slide2, #slide3 {
+   margin: auto;
+   width: 60%;
+}
+
+/*****************************
+* Classes
+******************************/
+.flexBox {
+   display: flex;
+   flex-direction: row;
+}
+
+.flexdown {
+   display: flex;
+   flex-direction: column;
+}
+
+.scrollable {
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+
+.selection {
+   margin: auto;
+   width: 50%;
+   height: 30px;
+   transition-duration: 1s;
+   border-radius: 5px;
+   margin: 5px 20px;
+   background-color: #fa5757;
+   border: 2px solid #d64e4e;
+}
+
+.piano-key {
+   width: 50px;
+   height: 200px;
+   border: 1px solid black;
+   border-collapse: collapse;
+   background-color: white;
+}
+
+.piano-key:hover {
+   background-color: #cfcfcf
+}
+
+.black-key {
+   width: 50%;
+   height: 75%;
+   background-color: black;
+}
+
+.expandable:focus {
+   width: 100%;
+}
+
+.slideLeftDisappear {
+   animation-name: slideLeftDisappear;
+   animation-duration: 1s;
+}
+
+.slideLeftAppear {
+   animation-name: slideLeftAppear;
+   animation-duration: 1s;
+}
+
+.wiggle {
+   animation-name: wiggle;
+   animation-duration: 1s;
+}
+
+/********************************
+*  Animations/Transforms:
+*********************************/
+@keyframes slideLeftDisappear {
+   from { transform: translateX(0px); opacity: 100% }
+   to { transform: translateX(-200px); opacity: 0% }
+}
+
+@keyframes slideLeftAppear {
+   from { transform: translateX(200px); opacity: 0% }
+   to { transform: translateX(0px); opacity: 100%; }
+}
+
+@keyframes wiggle {
+   0%   { transform: rotate(-5deg); }
+   50%  { transform: rotate(5deg);  }
+   100% { transform: rotate(0deg);  }
+}

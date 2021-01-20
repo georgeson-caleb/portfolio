@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <title>
+         JavaScript Events
+      </title>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+   </head>
+   <body onload="loadPageFunction()" onbeforeunload="saveColors()">
+      <header>
+         <h1>
+            JavaScript Events
+         </h1>
+         <a href="../../index.html">Home</a>
+      </header>
+      <div id="flexbox">
+            <div id="events" ontouchstart="processTouch()" ontouchmove="moveTouch()" ontouchend="endTouch()" onmouseover="mouseOn()" onmouseleave="mouseOff()" onclick="changeBackgroundColor()">Swipe or hover over box to change color<br>Click box to set background</div>
+            <div id="transition" ontransitionend="this.style.backgroundColor = getRandomColor()">Hover over me!</div>
+            <div id="animation" onanimationend="removeAnimation()" onclick="startAnimation()"><span>Click Me!</span></div>
+      </div>
+      <div id="output"></div>
+   </body>
+</html>

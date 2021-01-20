@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <title>
+         CSS3 Transitions, Animations, Transformations
+      </title>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+   </head>
+   <body>
+      <header>
+         <h1>
+            Transitions, Animations, Transformations
+         </h1>
+         <a href="../../index.html">Home</a>
+         <div id="transition" class="example">
+            <h2>Transition</h2>
+            <div id="transitionDiv1" onclick="startTransition1(this)" ontransitionend="endTransition1(this)">
+               Click Me!
+            </div>
+            <div id="transitionDiv2" onclick="startTransition2(this)" ontransitionend="endTransition2(this)">
+               Click Me!
+            </div>
+         </div>
+         <div id="animation" class="example">
+            <h2>Animation</h2>
+            <div class="flex-container">
+               <div id="animationDiv1" onclick="startAnimation(this, 'animate1')" onanimationend="endAnimation(this)">
+                  Click Me!
+               </div>
+               <div id="animationDiv2" onclick="startAnimation(this, 'animate2')" onanimationend="endAnimation(this)">
+                     Click Me!
+               </div>
+            </div>
+         </div>
+      </header>
+   </body>
+</html>

@@ -1,0 +1,21 @@
+body {
+   background-color: #a0d2f3;
+}
+
+div {
+   width: 150px;
+   height: 150px;
+   border: 1px solid black;
+   background-color: #e04284;
+   transition-duration: 3s;
+}
+
+#transform2:hover {
+   border: 4px solid #ffffff;
+   border-radius: 20px;
+}
+
+#transform3:hover {
+   height: 200px;
+   width: 200px;
+}

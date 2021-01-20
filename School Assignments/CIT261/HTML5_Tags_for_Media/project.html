@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <title>
+         HTML5 Tags for Media
+      </title>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+   </head>
+   <body>
+      <header>
+         <h1>
+            HTML5 Tags for Media
+         </h1>
+         <a href="../../index.html">Home</a>
+      </header>
+      <div id="videoTags">
+         <h2>
+            Video
+         </h2>
+         <h4>
+            Here's a video of my dog! 
+         </h4>  
+         <video width="320" height="200" controls>
+            <source src="cooper-the-dog.mp4" type="video/mp4">
+            Oops! There was a problem displaying the video. Try using a different browser.
+         </video>
+      </div>
+      <div id="audioTags">
+         <h2>
+            Audio
+         </h2>
+         <audio controls controlslist="nodownload">
+            <source src="bensound-ukulele.mp3" type="audio/mpeg">
+            Oops! There was an error loading the audio. Try using a different browser.
+         </audio>
+         <h6>Song credit: <a href="https://www.bensound.com">bensound.com</a></h6>
+         <h4>
+            Click bell for sound!
+         </h4>
+         <img src="bell.jpg" onclick="playBell()">
+         <audio id="bell" style="display:none;">
+            <source src="service-bell_daniel_simion.mp3" type="audio/mpeg">
+         </audio>
+      </div>
+      <div id="canvasTags">
+         <canvas id="canvas" width="300px" height="200px"></canvas>
+         <button onclick="drawCircle()">Draw circle</button>
+         <button onclick="drawRectangle()">Draw Rectangle</button>
+      </div>
+   </body>
+</html>

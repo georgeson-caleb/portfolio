@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <title>
+         JSON
+      </title>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+   </head>
+   <body>
+      <header>
+         <h1>
+            JSON
+         </h1>
+         <a href="../../index.html">Home</a>
+      </header>
+      <div id="stringifyExample">
+         Enter some information to convert to JSON format
+         <form>
+            Make a thing:<br>
+            Name:<input type="text" id="name"><br>
+            Shape:
+            <select id="shapes">
+               <option value=""></option>
+               <option value="circle">Circle</option>
+               <option value="triangle">Triangle</option>
+               <option value="square">Square</option>
+            </select><br>
+            Color:<input type="text" id="color"><br>
+            Check things to include with this thing:
+            <ul id="checkBox">
+               <li><input type="checkbox" id="checkbox1"value="Cat">Cat</li>
+               <li><input type="checkbox" id="checkbox2"value="Dog">Dog</li>
+               <li><input type="checkbox" id="checkbox3"value="Mouse">Mouse</li>
+               <li><input type="checkbox" id="checkbox4"value="Bird">Bird</li>
+            </ul>
+         </form>
+         <div id="stringifyButton">
+            Click Stringify to convert to JSON<br>
+            <button type="button" onClick="stringifyObject()">Stringify</button><br>
+            <div id="stringified"></div>
+         </div>
+         <div style="visibility: hidden" id="parseButton">
+            Click Parse to convert the string from JSON back into an object<br>
+            <button type="button" onClick="parseObject()">Parse</button>
+            <div id="parsed"></div>
+         </div>
+      </div>
+   </body>
+</html>

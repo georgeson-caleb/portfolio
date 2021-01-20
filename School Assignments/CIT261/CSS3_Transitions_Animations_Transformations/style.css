@@ -1,0 +1,58 @@
+.example {
+   width: 75%;
+   height: 100px;
+   margin: 10px auto;
+   background-color: #9395ff;
+}
+
+#transitionDiv1 {
+   background-color: #e0ec6d;
+   margin: auto;
+   width: 40px;
+   height: 40px;
+   transition: 3s;
+}
+
+#transitionDiv2 {
+   
+}
+
+#animationDiv1 {
+   margin: 0px 50px;
+   width: 100px;
+   height: 50px;
+   background-color: #e0ec6d;
+}
+
+#animationDiv2 {
+   width: 100px;
+   height: 50px;
+   background-color: #e0ec6d;
+}
+
+.flex-container {
+   display: flex;
+}
+
+.animate1 {
+   animation-name: animation1;
+   animation-duration: 5s;
+}
+
+.animate2 {
+   animation-name: animation2;
+   animation-duration: 10s;
+}
+
+@keyframes animation1 {
+   from {transform: rotate(0deg);}
+   to   {transform: rotate(360deg);}
+}
+
+@keyframes animation2 {
+   0%    {margin-left: 0px;   transform: rotate(0deg);   }
+   25%   {margin-left: 250px; transform: rotate(90deg);  } 
+   50%   {margin-left: 500px; transform: rotate(180deg); }
+   75%   {margin-left: 250px; transform: rotate(270deg); }
+   100%  {margin-left: 0px;   transform: rotate(360deg); }  
+}

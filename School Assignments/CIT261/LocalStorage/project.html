@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <title>
+         Local Storage
+      </title>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+   </head>
+   <body>
+      <header>
+         <h1>
+            Local Storage
+         </h1>
+         <a href="../../index.html">Home</a>
+      </header>
+      <div id="simpleDataExample">
+         <h3>
+            Simple Data Storage
+         </h3>
+         <div class="input">
+            Number:<input type="number" id="number">
+            <button onclick="saveNumber()">Save number</button>
+            <button onclick="loadNumber()">Load last number</button>
+            <span id="loadedNumber"></span>
+         </div>
+      </div>
+      <div id="storeArrayExample">
+         <h3>
+            Array Storage
+         </h3>
+         <div class="input">
+            Click on at least two animals
+            <ul>
+               <li><input type="checkbox" id="array1" value="Dog">Dog</li>
+               <li><input type="checkbox" id="array2" value="Cat">Cat</li>
+               <li><input type="checkbox" id="array3" value="Mouse">Mouse</li>
+               <li><input type="checkbox" id="array4" value="Snake">Snake</li>
+               <li><input type="checkbox" id="array5" value="Lizard">Lizard</li>
+            </ul>
+            <button onclick="saveArray()">Save Animals</button><br>
+            <button onclick="loadArray()">Load Animals</button>
+            <span id="loadedArray"></span>            
+         </div>
+      </div>
+      <div id="storeObjectExample">
+         <h3>
+            Object Storage
+         </h3>
+         <div class="input">
+            Name<input type="text" id="name"><br>
+            Color<input type="text" id="color"><br>
+            Size
+            <select id="size">
+               <option>
+                  Small
+               </option>
+               <option>
+                  Medium
+               </option>
+               <option>
+                  Large
+               </option>
+            </select>
+            <button type="button" onclick="getData()">Save data</button>
+         </div>
+         <div id="userData">
+            Name of thing: <input type="text" id="key">
+            <button type="button" onclick="retrieveData()">Get the thing</button>
+            <div id="thing"></div>
+         </div>
+         <h2>Real-World Example:</h2>
+         <div id="registrationInfo">
+            <h3>Sign Up for Band Camp</h3>
+            Number of students: <input type="number" id="numStudents">
+            <button onclick="displayStudentInputBoxes()">Register Now!</button>
+         </div>
+         <div id="loadStudents">
+            Instructor name:<input type="text" id="loadInstructorName">
+            <button onclick="loadRegistration()">Load registration</button>
+            <div id="info">
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
