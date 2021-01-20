@@ -1,0 +1,22 @@
+body {
+   background-color: #7eebe5;
+}
+
+.flex-child {
+   background-color: #7072e9;
+   height: 100px;
+   width: 30%;
+   margin: auto;
+   text-align: center;
+   padding: 10px;
+}
+
+.flex-parent {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+}
+
+.flex-child:hover {
+   font-weight: bold;
+}

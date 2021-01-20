@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <% include ../partials/head %>
+</head>
+<body>
+   <header>
+      <% include ../partials/header %>
+   </header>
+   <div class="m-auto col-lg-7 col-md-10 col-sm-12 p-3 border rounded">
+      Uninvested Money: <%= money %> <br>
+      <label for="search">Search stocks (Use the symbol, not the name):</label>
+      <input id="search" type="text" placeholder="E.G: TWTR"><br>
+      <button type="button" class="btn-primary rounded" onclick="searchStocks()">Search</button>
+      <a href="https://iexcloud.io">Data provided by IEX Cloud</a>
+      <div id="searchResult"></div>
+   </div>
+   <div class="mx-auto my-3 col-lg-7 col-md-10 col-sm-12 p-3 border rounded">
+      <h3>Purchased Stocks</h3> 
+      <table class="table">
+         <tr>
+            <th>
+               Name
+            </th>
+            <th>
+               Money Invested
+            </th>
+            <th>
+               Current Price
+            </th>
+            <th>
+               Quantity
+            </th>
+            <th>
+               Equity
+            </th>
+            <th>
+               Total Change
+            </th>
+            <th>
+            </th>
+         </tr>
+      <% stocks.forEach(function(stock) {%>
+         <tr>
+            <td>
+               <%= stock.symbol %>
+            </td>
+            <td>
+               $<%= stock.money_invested %>
+            </td>
+            <td>
+               $<%= stock.current_price %>
+            </td>
+            <td>
+               <%= stock.quantity %>
+            </td>
+            <td>
+               $<%= stock.current_value %>
+            </td>
+            <td>
+               $<%= stock.change %>
+            </td>
+            <td>
+               <input type="number">
+               <button onclick="sell(this)">Sell</button>
+            </td>
+         </tr>
+      <% }); %>
+      
+      </table>
+   </div>
+</body>
+</html>

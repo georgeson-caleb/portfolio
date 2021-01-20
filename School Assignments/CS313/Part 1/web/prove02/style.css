@@ -1,0 +1,22 @@
+body {
+   background-color: #f0f0ff;
+}
+
+#title-header {
+   background-color: #8d8bf5;
+}
+
+#info-parent {
+   background-color: #cacae7;
+}
+
+#assignment-link {
+   width: 50%;
+   border-radius: 5px;
+   background-color: #a2a2e6;
+}
+
+#assignment-link:hover {
+   color: white;
+   background-color: #6565a5;
+}
